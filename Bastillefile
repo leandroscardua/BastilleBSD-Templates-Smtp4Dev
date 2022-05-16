@@ -1,2 +1,7 @@
-PKG bash wget 
-CMD 
+PKG wget
+CMD wget https://github.com/Servarr/dotnet-bsd/releases/download/v6.0.5-125/dotnet-runtime-6.0.5-freebsd-x64.tar.gz
+CMD tar xf dotnet-runtime-6.0.5-freebsd-x64.tar.gz -C /usr/local/bin/
+CMD ln -s /usr/local/lib/libsqlite3.so /usr/local/lib/libe_sqlite3
+CMD wget https://github.com/rnwood/smtp4dev/releases/download/3.2.0-ci20220516108/Rnwood.Smtp4dev-noruntime-3.2.0-ci20220516108.zip
+CMD unzip Rnwood.Smtp4dev-noruntime-3.2.0-ci20220516108.zip -d /usr/local/
+CMD dotnet ./usr/local/Rnwood.Smtp4dev/Rnwood.Smtp4dev.dll
