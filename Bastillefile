@@ -1,5 +1,5 @@
 ARG version=3.2.0-ci20220516108
-PKG wget libunwind libinotify sqlite3
+PKG wget libunwind libinotify sqlite3 icu
 CMD wget https://github.com/Servarr/dotnet-bsd/releases/download/v6.0.5-125/dotnet-runtime-6.0.5-freebsd-x64.tar.gz
 CMD wget https://github.com/Servarr/dotnet-bsd/releases/download/v6.0.5-125/dotnet-sdk-6.0.300-freebsd-x64.tar.gz
 CMD tar xf dotnet-runtime-6.0.5-freebsd-x64.tar.gz -C /usr/local/bin/
