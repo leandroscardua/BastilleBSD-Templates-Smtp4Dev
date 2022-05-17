@@ -5,6 +5,6 @@ CMD wget https://github.com/Servarr/dotnet-bsd/releases/download/v6.0.5-125/dotn
 CMD tar xf dotnet-runtime-6.0.5-freebsd-x64.tar.gz -C /usr/local/bin/
 CMD tar xf dotnet-sdk-6.0.300-freebsd-x64.tar.gz -C /usr/local/bin/
 CMD ln -s /usr/local/lib/libsqlite3.so /usr/local/lib/libe_sqlite3
-CMD wget https://github.com/rnwood/smtp4dev/releases/download/"${port}"/Rnwood.Smtp4dev-noruntime-"${version}".zip
+CMD wget https://github.com/rnwood/smtp4dev/releases/download/"${version}"/Rnwood.Smtp4dev-noruntime-"${version}".zip
 CMD unzip Rnwood.Smtp4dev-noruntime-"${version}".zip -d /usr/local/Rnwood.Smtp4dev/
 CMD dotnet /usr/local/Rnwood.Smtp4dev/Rnwood.Smtp4dev.dll --db=/usr/local/Rnwood.Smtp4dev/database.db
